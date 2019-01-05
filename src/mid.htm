@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+  .au-img-1 {
+      max-width: 30px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+  }
+  .au-img-2 {
+      max-width: 40px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+  }
+
+</style>
+
+<body>
+
+  <div class="container">
+    <div class="card-columns">
+
+      <!-- Processing  -->
+      <a href="#" data-toggle="tooltip" title="Click here for the details." data-placement="right">
+        <div class="card border-dark text-dark" style="height:150px">
+          <div class="card-body text-center">
+            <h5 class="card-title"><img src="../files/box.jpg" class='img-responsive au-img-1'/> Processing Orders</h5>
+            <div class="card-text text-muted">Some useful info sent from the back-end in JSON format.</div>
+            <p align="right"><span class="badge badge-pill badge-primary">9</span></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Shipping  -->
+      <a href="#" data-toggle="tooltip" title="Click here for the details." data-placement="right">
+        <div class="card border-dark text-dark" style="height:150px">
+          <div class="card-body text-center">
+            <h5 class="card-title"><img src="../files/ship.png" class='.img-responsive au-img-2' /> Shipping Orders</h5>
+            <div class="card-text text-muted">Some useful info sent from the back-end in JSON format.</div>
+            <p align="right"><span class="badge badge-pill badge-success">101</span></p>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- Agent Receipts  -->
+      <a href="#" data-toggle="tooltip" title="Click here for the details." data-placement="right">
+        <div class="card border-dark text-dark" style="height:150px">
+          <div class="card-body text-center">
+            <h5 class="card-title"> Agent Receipts</h5>
+            <div class="card-text text-muted">Some useful info sent from the back-end in JSON format.</div>
+            <p align="right"><span class="badge badge-pill badge-info">15</span></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Agent Returns  -->
+      <a href="#" data-toggle="tooltip" title="Click here for the details." data-placement="right">
+        <div class="card border-dark text-dark" style="height:150px">
+          <div class="card-body text-center">
+            <h5 class="card-title"> Agent Returns</h5>
+            <div class="card-text text-muted">Some useful info sent from the back-end in JSON format.</div>
+            <p align="right"><span class="badge badge-pill badge-warning">15</span></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Some Other  -->
+      <a href="#" data-toggle="tooltip" title="Click here for the details." data-placement="right">
+        <div class="card border-dark text-dark" style="height:150px">
+          <div class="card-body text-center">
+            <h5 class="card-title">Some Other</h5>
+            <div class="card-text text-muted">Some useful info sent from the back-end in JSON format.</div>
+            <p align="right"><span class="badge badge-pill badge-danger">15</span></p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+</body>
+
+</html>
